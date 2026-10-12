@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#100509">
+<meta name="description" content="Connect with open-minded women, enjoy free sexting, private 1-on-1 chats, and live video calls.">
+<title>RealSexClub - Real People. Real Connections.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--pink:#ff1760;--pink-light:#ff6b9c;--pink-dark:#a9003b;--bg:#100509;--text:#fff;--muted:#e2d9df}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:100%;height:100%;margin:0;overflow:hidden;overscroll-behavior:none}
+body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif}
+.page{position:relative;height:100vh;height:100svh;height:100dvh;width:100%;display:grid;grid-template-rows:52% 48%;overflow:hidden;isolation:isolate;background:radial-gradient(ellipse at 70% 100%,#31091d 0%,#100509 68%)}
+.hero{position:relative;min-height:0;height:100%;overflow:hidden;background:#21130f}
+.hero img{width:100%;height:100%;display:block;object-fit:cover;object-position:center top;filter:saturate(.94) contrast(1.03)}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,3,7,.46),transparent 18%,rgba(16,5,9,.02) 55%,#100509 100%);pointer-events:none}
+.site-header{position:absolute;z-index:3;top:max(14px,env(safe-area-inset-top));left:16px;right:16px;display:flex;justify-content:space-between;align-items:flex-start;gap:10px;padding:8px 9px;border-radius:18px;background:linear-gradient(90deg,rgba(12,3,8,.20),rgba(12,3,8,.04));backdrop-filter:blur(1px)}
+.brand{display:flex;align-items:center;gap:8px;text-shadow:0 2px 12px rgba(0,0,0,.55)}
+.heart-logo{width:clamp(39px,8vw,48px);height:clamp(39px,8vw,48px);flex:0 0 clamp(39px,8vw,48px);line-height:0;filter:drop-shadow(0 3px 5px rgba(0,0,0,.48))}.heart-logo svg{display:block;width:100%;height:100%;overflow:visible}
+.brand-name{font-family:Manrope,sans-serif;font-size:clamp(22px,6.2vw,31px);font-weight:800;letter-spacing:-1.05px;line-height:1.08;white-space:nowrap;color:#fff;text-shadow:0 2px 9px rgba(0,0,0,.6)}
+.brand-name .real,.brand-name .club{color:#fff;text-shadow:0 2px 9px rgba(0,0,0,.6)}.brand-name .accent{color:#ff2b70;text-shadow:none;-webkit-text-stroke:0;border:0}
+.tagline{font-size:10px;letter-spacing:.1px;margin-top:3px;color:#fff;text-shadow:0 2px 6px #000}
+.badge{position:relative;width:42px;height:42px;flex:0 0 42px;border:1.5px solid #fff;border-radius:50%;display:grid;place-items:center;font-size:12px;font-weight:800;color:#ff1760;background:linear-gradient(145deg,#fff 0%,#fff 58%,#ffe0eb 100%);box-shadow:inset 0 2px 3px rgba(255,255,255,.98),inset 0 -3px 5px rgba(255,23,96,.18),0 3px 7px rgba(0,0,0,.22),0 0 8px rgba(255,255,255,.28);text-shadow:0 1px 0 #fff,0 1px 2px rgba(255,23,96,.28)}
+.badge:before{content:"";position:absolute;top:4px;left:7px;width:20px;height:8px;border-radius:50%;background:linear-gradient(90deg,rgba(255,255,255,.98),rgba(255,255,255,0));transform:rotate(-25deg);filter:blur(.5px)}
+.content{position:relative;min-height:0;height:100%;overflow:hidden;padding:6px 16px 7px;display:flex;flex-direction:column;justify-content:space-between;gap:3px;background:linear-gradient(150deg,rgba(255,255,255,.025),transparent 35%)}
+.bottom-space{display:none}
+.intro{flex:0 0 auto;text-align:left}
+h1{font-family:Manrope,sans-serif;font-size:clamp(27px,5.2vh,39px);font-weight:800;letter-spacing:-1.3px;line-height:1.02}
+h1 span{color:var(--pink);text-shadow:0 3px 20px rgba(255,23,96,.15)}
+.description{font-size:clamp(11px,1.8vh,14px);line-height:1.4;color:var(--muted);margin-top:3px;max-width:450px}
+.features{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:3px;width:100%;flex:0 0 auto}
+.feature{display:flex;min-width:0;flex-direction:column;align-items:center;text-align:center;gap:5px}
+.feature-icon{width:clamp(37px,6vh,49px);height:clamp(37px,6vh,49px);border-radius:50%;display:grid;place-items:center;background:linear-gradient(145deg,#fff 0%,#fff9fc 45%,#eadde4 100%);border:1px solid rgba(255,255,255,.9);box-shadow:0 6px 13px rgba(0,0,0,.3),inset 0 2px 2px rgba(255,255,255,.95),inset 0 -3px 5px rgba(177,136,157,.18)}
+.glyph{position:relative;display:block;width:24px;height:24px;color:#ff1760;filter:drop-shadow(0 2px 1px rgba(130,0,45,.42))}
+.glyph:before,.glyph:after{content:"";position:absolute;pointer-events:none}
+.glyph-heart:before{left:3px;top:5px;width:18px;height:17px;background:linear-gradient(145deg,#ff8db2 0%,#ff2e70 32%,#ed004f 72%,#b8003e 100%);clip-path:path("M 9 17 C 7 15 0 10 0 6 C 0 0 7 -1 9 4 C 12 -1 19 0 19 6 C 19 10 12 15 9 17 Z")}
+.glyph-heart:after{left:6px;top:6px;width:8px;height:4px;border-radius:50%;background:rgba(255,255,255,.8);transform:rotate(-25deg);filter:blur(.3px)}
+.glyph-pin:before{left:4px;top:1px;width:17px;height:20px;border-radius:70% 70% 70% 0;background:linear-gradient(135deg,#ff9bbb,#ff2d70 45%,#d90049);transform:rotate(-45deg);box-shadow:inset 1px 1px 1px rgba(255,255,255,.75),inset -2px -2px 2px rgba(132,0,42,.28)}
+.glyph-pin:after{left:9px;top:6px;width:7px;height:7px;border-radius:50%;background:linear-gradient(145deg,#fff,#f4cfdd);box-shadow:inset 0 1px 2px rgba(160,0,55,.22)}
+.glyph-shield:before{left:3px;top:2px;width:19px;height:21px;background:linear-gradient(135deg,#ff9bbb 0%,#ff2d70 38%,#d90049 76%,#a9003b 100%);clip-path:polygon(50% 0,95% 18%,88% 67%,50% 100%,12% 67%,5% 18%);filter:drop-shadow(0 1px 0 #fff)}
+.glyph-shield:after{left:7px;top:5px;width:1px;height:13px;background:rgba(255,255,255,.65);box-shadow:5px 1px 0 rgba(255,255,255,.15)}
+.glyph-bolt:before{left:5px;top:1px;width:15px;height:22px;background:linear-gradient(135deg,#ff9bbb 0%,#ff2d70 38%,#d90049 78%,#a9003b 100%);clip-path:polygon(57% 0,10% 56%,43% 56%,31% 100%,94% 36%,60% 36%);filter:drop-shadow(0 1px 0 #fff)}
+.glyph-bolt:after{left:10px;top:4px;width:3px;height:7px;border-radius:2px;background:rgba(255,255,255,.7);transform:rotate(25deg)}
+.feature-label{font-size:clamp(9px,1.6vh,12px);font-weight:700;line-height:1.15;color:#fff}
+.actions{width:100%;flex:0 0 auto;display:flex;flex-direction:column;gap:8px}
+.continue-btn{height:clamp(48px,7.4vh,62px);width:100%;display:flex;align-items:center;justify-content:center;gap:13px;position:relative;overflow:hidden;border-radius:999px;border:1px solid #ff5489;text-decoration:none;color:#fff;font-family:Manrope,sans-serif;font-size:clamp(17px,2.8vh,22px);font-weight:800;background:linear-gradient(180deg,#ff4b8b 0%,#ff1760 38%,#e9004e 100%);box-shadow:0 7px 20px rgba(233,0,78,.32),inset 0 2px 2px rgba(255,255,255,.48),inset 0 -4px 5px rgba(105,0,37,.24)}
+.continue-btn:before{content:"";position:absolute;top:2px;left:9px;right:9px;height:38%;border-radius:999px;background:linear-gradient(180deg,rgba(255,255,255,.3),rgba(255,255,255,0));pointer-events:none}
+.continue-btn:active{transform:scale(.99)}
+.arrow{font-size:28px;line-height:1;font-weight:400}
+.trust{text-align:center;font-size:clamp(9px,1.5vh,12px);line-height:1.3;color:#f3e9ee}
+.trust .dot{padding:0 8px;color:#fff}
+@media(min-width:600px) and (orientation:landscape){.page{display:grid;grid-template-columns:50% 50%;grid-template-rows:100%;height:100vh;height:100dvh}.hero{grid-column:1;grid-row:1;height:100%;min-height:0;}.hero:after{background:linear-gradient(90deg,rgba(10,3,7,.4),transparent 30%,#100509 100%)}.content{grid-column:2;grid-row:1;height:100%;min-height:0;padding:28px clamp(20px,4vw,50px);justify-content:center;gap:clamp(12px,3vh,26px)}.bottom-space{display:none}.site-header{top:20px}.intro h1{font-size:clamp(30px,5vw,48px)}.description{font-size:clamp(12px,1.4vw,16px)}.feature-icon{width:clamp(38px,5vw,52px);height:clamp(38px,5vw,52px)}.feature-label{font-size:clamp(10px,1.2vw,13px)}.continue-btn{height:52px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+/* Enhanced 3D pink treatment for the four feature icons only */
+.glyph{filter:drop-shadow(0 2px 0 #fff) drop-shadow(0 3px 2px rgba(115,0,40,.55));}
+.glyph-heart:before{background:linear-gradient(145deg,#ffb5ce 0%,#ff5b96 24%,#ff1760 52%,#d50049 78%,#97002f 100%);box-shadow:inset 1px 1px 1px rgba(255,255,255,.85),inset -2px -2px 2px rgba(111,0,37,.35),0 2px 2px rgba(111,0,37,.35);}
+.glyph-heart:after{left:6px;top:6px;width:8px;height:4px;border-radius:50%;background:linear-gradient(90deg,#fff,rgba(255,255,255,.15));transform:rotate(-25deg);filter:blur(.25px);}
+.glyph-pin:before{background:linear-gradient(135deg,#ffc0d5 0%,#ff6399 22%,#ff1760 52%,#c90045 82%,#8d002e 100%);box-shadow:inset 1px 1px 2px rgba(255,255,255,.9),inset -2px -3px 3px rgba(111,0,37,.38),0 2px 2px rgba(111,0,37,.35);}
+.glyph-pin:after{background:radial-gradient(circle at 30% 25%,#fff 0%,#fff0f6 45%,#ffc1d8 100%);box-shadow:inset 0 1px 2px rgba(160,0,55,.3),0 0 2px rgba(255,255,255,.8);}
+.glyph-shield:before{background:linear-gradient(135deg,#ffc4d9 0%,#ff6c9f 20%,#ff1760 50%,#cf0047 78%,#92002f 100%);filter:drop-shadow(0 2px 1px rgba(111,0,37,.45));}
+.glyph-shield:after{left:7px;top:5px;width:2px;height:13px;background:linear-gradient(180deg,rgba(255,255,255,.95),rgba(255,255,255,.1));box-shadow:5px 1px 0 rgba(255,255,255,.3);}
+.glyph-bolt:before{background:linear-gradient(135deg,#ffc4d9 0%,#ff6c9f 20%,#ff1760 50%,#cf0047 78%,#92002f 100%);filter:drop-shadow(0 2px 1px rgba(111,0,37,.45));}
+.glyph-bolt:after{background:linear-gradient(180deg,#fff,rgba(255,255,255,.15));}
+
+/* Checkmark icon for “No False Promises” — distinct from the privacy shield */
+.glyph-check:before{left:3px;top:3px;width:18px;height:18px;border-radius:50%;background:linear-gradient(145deg,#ffc4d9 0%,#ff6c9f 20%,#ff1760 50%,#cf0047 78%,#92002f 100%);box-shadow:inset 1px 1px 1px rgba(255,255,255,.8),inset -2px -2px 2px rgba(111,0,37,.3),0 2px 2px rgba(111,0,37,.35);}
+.glyph-check:after{left:8px;top:8px;width:8px;height:5px;border-left:2px solid #fff;border-bottom:2px solid #fff;transform:rotate(-45deg);border-radius:0 0 0 1px;}
+</style>
+</head>
+<body>
+<main class="page">
+  <section class="hero" aria-label="Welcome">
+    <img src="img.jpeg" alt="Portrait for RealSexClub" fetchpriority="high">
+  </section>
+  <header class="site-header">
+    <div class="brand"><div class="heart-logo" aria-hidden="true">
+      <svg viewBox="0 0 72 72" role="img" aria-label="" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="heartFace" x1="0" y1="0" x2="0.85" y2="1">
+            <stop offset="0" stop-color="#ff6d9d"/>
+            <stop offset=".28" stop-color="#ff286b"/>
+            <stop offset=".62" stop-color="#f00650"/>
+            <stop offset="1" stop-color="#a9003d"/>
+          </linearGradient>
+          <linearGradient id="heartSide" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#ff8db5"/>
+            <stop offset=".5" stop-color="#d90049"/>
+            <stop offset="1" stop-color="#760026"/>
+          </linearGradient>
+          <linearGradient id="heartShine" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#fff" stop-opacity=".9"/>
+            <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+          </linearGradient>
+          <filter id="heartShadow" x="-35%" y="-25%" width="180%" height="180%">
+            <feGaussianBlur in="SourceAlpha" stdDeviation="2.1"/>
+            <feOffset dx="1.5" dy="3"/>
+            <feComponentTransfer><feFuncA type="linear" slope=".55"/></feComponentTransfer>
+            <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
+        </defs>
+        <g filter="url(#heartShadow)">
+          <path d="M36 64 9.5 38.4C-2 26.9 4.8 8.5 19.3 8.5c7.5 0 12.8 4.2 16.7 10.1C40 12.7 45.3 8.5 52.8 8.5c14.5 0 21.3 18.4 9.8 29.9Z" fill="url(#heartSide)" transform="translate(1.5 2)"/>
+          <path d="M36 61 9.5 35.4C-2 23.9 4.8 5.5 19.3 5.5c7.5 0 12.8 4.2 16.7 10.1C40 9.7 45.3 5.5 52.8 5.5c14.5 0 21.3 18.4 9.8 29.9Z" fill="url(#heartFace)" stroke="#ff6b9d" stroke-width="1.2"/>
+          <path d="M11 21C14 10 25 8 32 17" fill="none" stroke="url(#heartShine)" stroke-width="3.3" stroke-linecap="round"/>
+          <path d="M40 17c4-5 10-7 15-4" fill="none" stroke="#ffb3cd" stroke-opacity=".8" stroke-width="2.4" stroke-linecap="round"/>
+          <path d="M13 28c1 8 13 19 23 27" fill="none" stroke="#ff9dbb" stroke-opacity=".35" stroke-width="1.5" stroke-linecap="round"/>
+        </g>
+      </svg>
+    </div><div><div class="brand-name"><span class="real">Real</span><span class="accent">Sex</span><span class="club">Club</span></div><div class="tagline">Real People. Real Connections.</div></div></div>
+    <div class="badge" aria-label="Adults 18 and older only">18+</div>
+  </header>
+  <section class="content">
+    <div class="intro"><h1>Find Someone<br><span>Hot</span> Near You</h1><p class="description">Connect with open-minded women, enjoy free sexting, private 1-on-1 chats, and live video calls.</p></div>
+    <div class="features">
+      <div class="feature"><div class="feature-icon"><span class="glyph glyph-check" aria-hidden="true"></span></div><div class="feature-label">Verified<br>Profiles</div></div>
+      <div class="feature"><div class="feature-icon"><span class="glyph glyph-pin" aria-hidden="true"></span></div><div class="feature-label">Nearby<br>Matches</div></div>
+      <div class="feature"><div class="feature-icon"><span class="glyph glyph-shield" aria-hidden="true"></span></div><div class="feature-label">Safe &amp;<br>Private</div></div>
+      <div class="feature"><div class="feature-icon"><span class="glyph glyph-bolt" aria-hidden="true"></span></div><div class="feature-label">Quick<br>Sign Up</div></div>
+    </div>
+    <div class="actions">
+      <!-- Replace YOUR_SIGNUP_URL with your real signup destination -->
+      <a class="continue-btn" href="https://cutt.ly/6ymAQaec" target="_blank" rel="noopener noreferrer">Explore Profiles <span class="arrow" aria-hidden="true">→</span></a>
+      <div class="trust">Free to Join <span class="dot">•</span> No Credit Card Required</div>
+    </div>
+  </section>
+  <div class="bottom-space" aria-hidden="true"></div>
+</main>
+</body>
+</html>
